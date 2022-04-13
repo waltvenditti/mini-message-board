@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  each x in messages
+    p #{x.user} (#{x.added}): #{x.text}
+  a(href='/new') New Message Page

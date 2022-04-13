@@ -1,0 +1,14 @@
+extends layout 
+
+block content
+  h1= 'Message Input'
+
+  form(method='POST' action='/new')
+    div.input-form
+      label(for='user') Username: 
+      input#user.form-control(type='text', name='user')
+    div.input-form
+      label(for='text') Message Content: 
+      input#text.form-control(type='text', name='text')
+    div.input-form
+      button(type='submit') Submit
